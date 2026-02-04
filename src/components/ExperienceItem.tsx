@@ -12,7 +12,7 @@ const ExperienceItem = ({company, date, title, location, technologies, descripti
                     >
                     <div className="flex w-full align-text-bottom">
                         <div className="flex w-[50%] gap-2.5">
-                            <h2 className="font-bold text-xl">{company}</h2>
+                            <h3 className="font-bold text-xl">{company}</h3>
                             |
                             <p className="text-xl">{title}</p>
                         </div>

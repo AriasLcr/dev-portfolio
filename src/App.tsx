@@ -1,5 +1,6 @@
 import './App.css'
 import WorkExperience from './components/WorkExperience'
+import Skills from './components/Skills'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
       <h1 className='font-sketch-written py-20'>Gabriel Arias</h1>
       <div className='h-250 grid place-items-center'>
         <WorkExperience />
+        <Skills />
       </div>
     </div>
   )
