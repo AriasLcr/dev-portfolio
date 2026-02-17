@@ -3,34 +3,57 @@
 const ExperienceItem = ({company, date, title, location, technologies, description, image}: {company :string, date: string, title: string, location: string, technologies: string, description: string, image: string}) => {
 
     return (
-        <>
-            <div className="flex justify-between w-full h-50 rounded-2xl my-8">
-                <div className="block w-25 grow-0 py-5">
-                <img src={image} alt="" width={100} height={100}/>
+        <div className="bg-[#2d2d2d] rounded-xl shadow-lg border-2 border-gray-500 p-4 sm:p-6 hover:bg-[#353535] transition-colors my-4 sm:my-6">
+            {/* Header Section - Logo + Company Info */}
+            <div className="flex items-start gap-3 sm:gap-4 mb-4">
+                <div className="shrink-0">
+                    <img 
+                        src={image} 
+                        alt={`${company} logo`} 
+                        className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-contain rounded-lg bg-white/5 p-1" 
+                    />
                 </div>
-                <div className="rounded-4xl py-3 px-5 w-full mx-6 flex flex-col items-stretch"
-                    >
-                    <div className="flex w-full align-text-bottom">
-                        <div className="flex w-[50%] gap-2.5">
-                            <h3 className="font-bold text-xl">{company}</h3>
-                            |
-                            <p className="text-xl">{title}</p>
-                        </div>
-
-                        <div className="flex w-[60%] justify-end gap-2.5 py-1">
-                            <h3>{location}</h3>
-                            |
-                            <h3>{date}</h3>
-                        </div>
+                
+                <div className="flex-1 min-w-0">
+                    {/* Title and Company */}
+                    <div className="mb-1 flex justify-start">
+                        <h3 className="text-lg sm:text-xl font-bold text-white leading-tight mr-1">
+                            {title}
+                        </h3>
+                        |
+                        <p className="text-lg sm:text-xl font-semibold text-gray-300 leading-tight ml-1">
+                            {company}
+                        </p>
                     </div>
-                    <div className="flex flex-col text-start w-full h-[70%]">
-                        <p>{technologies}</p>
-                        <p className="py-4">{description}</p>
+                    
+                    {/* Date and Location - Stack on mobile, inline on larger screens */}
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-sm text-gray-400">
+                        <span className="font-medium">{date}</span>
+                        <span className="hidden sm:inline text-gray-500">•</span>
+                        <span>{location}</span>
                     </div>
                 </div>
-
             </div>
-        </>
+
+            {/* Technologies */}
+            <div className="mb-4">
+                <div className="flex flex-wrap gap-2">
+                    {technologies.split(', ').map((tech, index) => (
+                        <span 
+                            key={index}
+                            className="px-2 py-1 bg-gray-700 text-gray-300 text-xs font-medium rounded"
+                        >
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+            </div>
+
+            {/* Description */}
+            <div className="text-gray-300 text-left text-sm sm:text-base leading-relaxed">
+                {description}
+            </div>
+        </div>
     )
 }
 

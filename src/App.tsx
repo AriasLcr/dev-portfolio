@@ -1,6 +1,7 @@
 import './App.css'
 import WorkExperience from './components/WorkExperience'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <div className='h-250 grid place-items-center'>
         <WorkExperience />
         <Skills />
+        <Projects/>
       </div>
     </div>
   )
