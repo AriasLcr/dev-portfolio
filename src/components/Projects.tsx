@@ -2,17 +2,17 @@ const projects = [
     {
         title: "Collaboratory Makerspace Platform",
         company: "Senior Development Project",
-        description: "Production IAM platform supporting user lifecycle management, company provisioning, and role-based access control across internal systems.",
+        description: "A full stack makerspace management system that streamlines equipment access, project tracking, and member collaboration.",
         technologies: ["React.js", "Java", "Spring", "PostgreSQL", "AWS"],
-        status: "Development",
+        status: "Active",
         type: "Enterprise",
-        github: "https://github.com/gabrielarias/iam-platform"
+        github: null
     },
     {
         title: "Jukebox",
         company: "RIT SHPE Chapter",
-        description: "Migrated SAP S/4HANA workloads to Azure for compliant access to Peru's banking currency exchange API.",
-        technologies: ["Python", "React.js", "Hardware", "AI"],
+        description: "A full stack interactive jukebox that integrates microcontroller based hardware with a real time web platform for song selection and queue synchronization.",
+        technologies: ["Python", "React.js", "Hardware"],
         status: "Active",
         type: "Club Project",
         github: " https://github.com/csm2029/RIT-SHPE-2026-Jukebox-Project",
@@ -20,9 +20,9 @@ const projects = [
     {
         title: "Developer Portfolio",
         company: "Personal",
-        description: "Modern portfolio website showcasing professional experience and technical skills. Built with React 19, TypeScript, and Tailwind CSS.",
+        description: "Modern portfolio website showcasing professional experience and technical skills.",
         technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-        status: "Active",
+        status: "Development",
         type: "Portfolio",
         github: "https://github.com/AriasLcr/dev-portfolio",
         website: "https://ariaslcr.github.io"
@@ -30,16 +30,16 @@ const projects = [
     {
         title: "Professional Society Voting Platform",
         company: "Database App Development Class",
-        description: "Full-featured REST API for e-commerce platform with authentication, payments, and inventory management.",
+        description: "A secure web based voting platform designed to manage elections, ballots, and role based access for professional organizations.",
         technologies: ["Node.js", "Express", "PostgreSQL", "React.js", "JWT", "Pandas"],
         status: "Completed",
-        type: "Personal",
-        github: "https://github.com/gabrielarias/ecommerce-api"
+        type: "Academic",
+        github: "https://github.com/AriasLcr/election-app"
     },
         {
         title: "SSE Website Rebuild",
-        company: "SSE",
-        description: "Led the complete rebuild of SSE's academic platform supporting 200+ students across tutoring and engineering resources.",
+        company: "Society of Software Engineers",
+        description: "A complete redesign and rebuild of the SSE website focused on improving performance, usability, and modern UI standards.",
         technologies: ["TypeScript", "React.js", "Next.js", "Prisma", "PostgreSQL"],
         status: "Production",
         type: "Club Project",
@@ -49,7 +49,7 @@ const projects = [
     {
         title: "Faculty Research Database",
         company: "Database Access Class",
-        description: "Collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.",
+        description: "A Java CLI application that uses JDBC for efficient match based search and SQL querying of faculty research data.",
         technologies: ["Java", "JDBC", "MySQL"],
         status: "Completed",
         type: "Academic",
