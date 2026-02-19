@@ -13,6 +13,14 @@
         
     background-size: 40px 40px; 
     
-    height: 400%;
+    height: 950%;
     width: 100%;
+    
 }
+
+@media screen and (min-width: 640px ) {
+    .grid-background {
+        height: 430%;
+    }
+}
+

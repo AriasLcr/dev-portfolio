@@ -146,9 +146,9 @@ const mySkills = {
 const Skills = () => {
     
     return (
-        <section className="my-10">
+        <section className="pt-18" id="skills">
             <h3 className="text-5xl font-bold mb-10">Skills</h3>
-            <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10">
                 {mySkills.skills.map(skill  => (
                     <div className="m-4">
                         {skill.svg}

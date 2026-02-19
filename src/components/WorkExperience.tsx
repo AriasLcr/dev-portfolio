@@ -35,7 +35,7 @@ const experiences = {
 const WorkExperience = () => {
     return (
         <>
-            <div className="my-1 w-4/5 sm:w-1/2">
+            <section className="my-1 pt-18 w-4/5 sm:w-2/3 md:2-1/2" id="experience">
                 <h2 className="text-5xl font-bold mb-10">Work Experience</h2>
                 <div className="flex flex-col w-full">
                 {
@@ -44,7 +44,7 @@ const WorkExperience = () => {
                     ))
                 }
                 </div>
-            </div>
+            </section>
         </>
     )
 }
