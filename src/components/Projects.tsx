@@ -79,7 +79,7 @@ const Projects = () => {
     };
 
     return (
-        <section className="my-10 w-4/5 sm:w-3/4 max-w-6xl" id="projects">
+        <section className="pt-18 w-4/5 sm:w-3/4 max-w-6xl" id="projects">
             <h2 className="text-5xl font-bold mb-10 text-white">Projects</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
