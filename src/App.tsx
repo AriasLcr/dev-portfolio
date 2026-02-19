@@ -24,7 +24,7 @@ function App() {
         </div>
 
       </main>
-      <div className='flex mt-50 items-end justify-center'>
+      <div className='flex mt-30 mb-5 items-end justify-center'>
         © 2026 - Made by Gabriel Arias 🐊
       </div>
     </div>
