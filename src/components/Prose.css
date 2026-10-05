@@ -8,3 +8,12 @@
 .prose p + p {
   margin-top: var(--sp-3);
 }
+
+.prose a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--ink);
+}

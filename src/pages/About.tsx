@@ -1,6 +1,24 @@
-import { bio, skills, contact } from '../content/about';
+import { bio, skills, contact, type BioParagraph } from '../content/about';
+import { Link } from 'react-router-dom';
 import { Prose } from '../components/Prose';
 import './About.css';
+
+function renderParagraph(p: BioParagraph, i: number) {
+  if (typeof p === 'string') return <p key={i}>{p}</p>;
+  return (
+    <p key={i}>
+      {p.map((seg, j) =>
+        typeof seg === 'string' ? seg : (
+          seg.href.startsWith('/') ? (
+            <Link key={j} to={seg.href}>{seg.text}</Link>
+          ) : (
+            <a key={j} href={seg.href}>{seg.text}</a>
+          )
+        )
+      )}
+    </p>
+  );
+}
 
 export function About() {
   return (
@@ -9,7 +27,7 @@ export function About() {
 
         <section className="bio">
           <Prose>
-            {bio.map((p, i) => <p key={i}>{p}</p>)}
+            {bio.map((p, i) => renderParagraph(p, i))}
           </Prose>
         </section>
 

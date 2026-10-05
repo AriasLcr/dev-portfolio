@@ -11,6 +11,10 @@ export function Animation() {
           courses at RIT that have honed my interest in the craft, from timing and weight to
           character performance and concept art.
         </p>
+        <p className="animation__intro">
+          The coursework collects sample works using: Maya, Adobe After Effects, TVPaint, 
+          Rostrum Camera, Krita, Clip Studio Paint, Pencil, and Paper.
+        </p>
         <div className="mosaic">
           {pieces.map((p, i) => {
             const [aw, ah] = p.aspect.split('/').map(Number);

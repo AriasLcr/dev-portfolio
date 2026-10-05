@@ -1,9 +1,20 @@
-export const bio: string[] = [
+type Segment = string | { text: string; href: string };
+export type BioParagraph = string | Segment[];
+
+export const bio: BioParagraph[] = [
   "I'm finishing a B.S. in Information Technology at RIT in December 2026.",
   "I work on backend systems where correctness matters under failure: payments that must not double-charge, access control that must not let the wrong person through, receipts that have to be readable by someone who cannot see them. Most of what I build lives at the boundary between a system and something outside it, a payment processor, an identity provider, a card reader on a door.",
   "Before Ezre I worked full-stack on a clinical platform at G&S in Lima, and before that in technology consulting at KPMG on an SAP migration.",
-  "On my free time, I like drawing and exploring various media forms.",
-  "Available full-time from January 2027.",
+  [
+    "I also draw and animate. There's a page of animation coursework ",
+    { text: "here", href: "/animation" },
+    ".",
+  ],
+  [
+    "I'm available full-time from January 2027, and you can reach me at ",
+    { text: "ariaslcr@gmail.com", href: "mailto:ariaslcr@gmail.com" },
+    ".",
+  ],
 ];
 
 export const skills: { label: string; items: string[] }[] = [
