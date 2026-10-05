@@ -19,7 +19,7 @@ export function Landing() {
               and low-vision customers can read. Tech lead on a makerspace platform delivered for
               an external client.
             </p>
-            <p>Available full-time from January 2027.</p>
+            <p>Available full-time from January 2027. F-1 STEM OPT work authorization. Open to relocation.</p>
           </Prose>
         </div>
       </section>

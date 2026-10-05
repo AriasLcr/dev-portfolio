@@ -11,7 +11,7 @@ export const bio: BioParagraph[] = [
     ".",
   ],
   [
-    "I'm available full-time from January 2027, and you can reach me at ",
+    "I'm available full-time from January 2027, with F-1 STEM OPT work authorization and open to relocation. You can reach me at ",
     { text: "ariaslcr@gmail.com", href: "mailto:ariaslcr@gmail.com" },
     ".",
   ],
