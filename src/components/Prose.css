@@ -1,0 +1,10 @@
+.prose {
+  max-width: var(--measure);
+  line-height: var(--lh-body);
+  font-size: var(--t-base);
+  color: var(--ink);
+}
+
+.prose p + p {
+  margin-top: var(--sp-3);
+}

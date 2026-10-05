@@ -1,0 +1,23 @@
+.footer {
+  margin-top: auto;
+  border-top: var(--hairline);
+  background: var(--base);
+}
+
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--sp-4);
+  display: flex;
+  gap: var(--sp-4);
+  font-size: var(--t-sm);
+  color: var(--ink-muted);
+}
+
+.footer__inner a {
+  color: var(--ink-muted);
+}
+
+.footer__inner a:hover {
+  color: var(--blue);
+}

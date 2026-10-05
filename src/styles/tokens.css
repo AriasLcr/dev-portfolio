@@ -1,0 +1,47 @@
+:root {
+  /* Light table */
+  --base:        #F6F7F4;
+  --base-raised: #FFFFFE;
+  --ink:         #202322;
+  --ink-muted:   #6B716D;
+  --rule:        #C8CCC4;
+  --blue:        #3A5CA8;
+  --red:         #C4402F;
+
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  /* 1.25 scale */
+  --t-xs:   0.75rem;
+  --t-sm:   0.875rem;
+  --t-base: 1rem;
+  --t-lg:   1.25rem;
+  --t-xl:   1.563rem;
+  --t-2xl:  1.953rem;
+  --t-3xl:  2.441rem;
+
+  --lh-tight: 1.25;
+  --lh-body:  1.7;
+  --measure:  62ch;
+
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 1rem;
+  --sp-4: 1.5rem;
+  --sp-5: 2.5rem;
+  --sp-6: 4rem;
+
+  --radius: 0;
+  --hairline: 1px solid var(--rule);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base:        #15181A;
+    --base-raised: #1D2124;
+    --ink:         #E8EAE6;
+    --ink-muted:   #8A918C;
+    --rule:        #333A3C;
+    --blue:        #7FA0E8;
+    --red:         #E2705F;
+  }
+}

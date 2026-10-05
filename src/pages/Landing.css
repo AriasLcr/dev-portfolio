@@ -1,0 +1,85 @@
+.intro {
+  padding: var(--sp-6) var(--sp-4);
+}
+
+.intro__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro__name {
+  font-size: var(--t-3xl);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--sp-5);
+}
+
+@media (max-width: 600px) {
+  .intro__name {
+    font-size: var(--t-2xl);
+  }
+}
+
+/* ── Section links ──────────────────────────────────────────── */
+
+.section-links {
+  border-top: var(--hairline);
+  padding: var(--sp-5) var(--sp-4);
+}
+
+.section-links__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+}
+
+@media (max-width: 600px) {
+  .section-links__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-links__item {
+  display: block;
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.section-links__item:hover {
+  color: var(--ink);
+}
+
+.section-links__item:hover .section-links__placeholder {
+  border-color: var(--ink);
+}
+
+.section-links__placeholder {
+  aspect-ratio: 4/3;
+  background: var(--base-raised);
+  border: var(--hairline);
+  margin-bottom: var(--sp-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-links__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--rule);
+}
+
+.section-links__item:hover .section-links__icon {
+  color: var(--ink-muted);
+}
+
+.section-links__label {
+  font-size: var(--t-xs);
+  color: inherit;
+}
+
+.section-links__item:hover .section-links__label {
+  text-decoration: underline;
+}

@@ -1,34 +1,21 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import WorkExperience from './components/WorkExperience'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import About from './components/About'
-import Contact from './components/Contact'
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { Landing } from './pages/Landing';
+import { Work } from './pages/Work';
+import { Animation } from './pages/Animation';
+import { About } from './pages/About';
+import { NotFound } from './pages/NotFound';
 
-function App() {
-
+export default function App() {
   return (
-    <div className='w-full h-full'>
-      <Navbar />
-      <main className='pt-16'>
-        <section id='home' className='place-items-center'>
-          <h1 className='text-[6.5rem] sm:text-[8rem] md:text-[10rem] py-20'>Gabriel Arias</h1>
-        </section>
-        <div className='grid place-items-center gap-10'>
-            <About />
-            <WorkExperience />
-            <Skills />
-            <Projects/>
-            <Contact />
-        </div>
-
-      </main>
-      <div className='flex mt-30 mb-5 items-end justify-center'>
-        © 2026 - Made by Gabriel Arias 🐊
-      </div>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Landing />} />
+        <Route path="work" element={<Work />} />
+        <Route path="animation" element={<Animation />} />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default App

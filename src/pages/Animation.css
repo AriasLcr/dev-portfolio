@@ -1,0 +1,56 @@
+.animation {
+  padding: var(--sp-5) var(--sp-4);
+}
+
+.animation__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.animation__intro {
+  max-width: var(--measure);
+  line-height: var(--lh-body);
+  color: var(--ink-muted);
+  font-size: var(--t-sm);
+  margin-bottom: var(--sp-5);
+}
+
+/* ── Mosaic ─────────────────────────────────────────────────── */
+
+/*
+  Flexbox row: all items share --mosaic-h; each item's width is
+  computed from its aspect ratio so columns hug the content exactly.
+  Rows that don't fill the full width center themselves.
+*/
+.mosaic {
+  --mosaic-h: clamp(180px, 22vw, 300px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-4);
+}
+
+.mosaic__item {
+  flex: 0 0 auto;
+  width: calc(var(--mosaic-h) * var(--ar));
+}
+
+.mosaic__item .frame {
+  width: 100%;
+}
+
+.mosaic__item .frame__media {
+  width: 100%;
+  height: var(--mosaic-h);
+  aspect-ratio: unset !important;
+}
+
+.mosaic__item .frame__label {
+  margin-bottom: var(--sp-3);
+}
+
+@media (max-width: 600px) {
+  .mosaic {
+    --mosaic-h: clamp(120px, 38vw, 180px);
+  }
+}
