@@ -23,6 +23,20 @@ export const pieces: AnimationPiece[] = [
     aspect: '16/9',
     colSpan: 2,
   },
+    {
+    src: '/keyframes-projects.gif',
+    alt: 'Keyframes drawing project for Drawing for Animation final',
+    label: 'DRAWING FOR ANIMATION  FINAL',
+    aspect: '16/9',
+    colSpan: 2,
+  },
+  {
+    src: '/final.mp4',
+    alt: 'Final animation piece',
+    label: 'PRINCIPLES OF ANIMATION  FINAL',
+    aspect: '16/9',
+    colSpan: 2,
+  },
   {
     src: '/AriasLacruz_walk_EC.mp4',
     alt: 'Walk cycle animation',
@@ -31,16 +45,9 @@ export const pieces: AnimationPiece[] = [
     colSpan: 2,
   },
   {
-    src: '/final.mp4',
-    alt: 'Final animation piece',
-    label: '2D ANIMATION  FINAL',
-    aspect: '16/9',
-    colSpan: 2,
-  },
-  {
     src: '/AriasLacruz_antic_overlap_mix.mp4',
     alt: 'Anticipation and overlap principles animation',
-    label: '2D ANIMATION  ANTICIPATION · OVERLAP',
+    label: '2D ANIMATION  ANTICIPATION OVERLAP',
     aspect: '16/9',
     colSpan: 2,
   },
