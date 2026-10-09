@@ -73,19 +73,19 @@ export const caseStudies: CaseStudy[] = [
     ],
     media: [
       {
-        src: '/Screenshot%20from%202026-10-04%2023-38-56.png',
+        src: '/collaboratory_1.png',
         alt: 'Collaboratory landing page with makerspace overview and member dashboard preview',
         label: 'COLLABORATORY  LANDING PAGE  REACT',
         aspect: '16/9',
       },
       {
-        src: '/Screenshot%20from%202026-10-04%2023-39-21.png',
+        src: '/collaboratory_2.png',
         alt: 'Collaboratory equipment rental page showing available laser cutter, 3D printer, and CNC router',
         label: 'COLLABORATORY  EQUIPMENT RENTAL  REACT',
         aspect: '16/9',
       },
       {
-        src: '/Screenshot%20from%202026-10-04%2023-39-39.png',
+        src: '/collaboratory_3.png',
         alt: 'Collaboratory member account page with profile information and membership plan',
         label: 'COLLABORATORY  MEMBER ACCOUNT  REACT',
         aspect: '16/9',

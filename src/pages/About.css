@@ -17,6 +17,26 @@
   margin-bottom: var(--sp-4);
 }
 
+/* ── Portrait ────────────────────────────────────────────────── */
+
+.about__photo {
+  max-width: 280px;
+}
+
+.about__portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center top;
+  border: var(--hairline);
+  margin-bottom: var(--sp-2);
+}
+
+.about__photo .about__edge-code {
+  margin-bottom: 0;
+}
+
 /* ── Skills ─────────────────────────────────────────────────── */
 
 .skills-list {

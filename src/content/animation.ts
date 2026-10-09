@@ -87,14 +87,14 @@ export const pieces: AnimationPiece[] = [
     colSpan: 2,
   },
   {
-    src: '/20240202_175841000_iOS.mp4',
+    src: '/rostrum_1.mp4',
     alt: 'Animation piece',
     label: '2D ANIMATION  CLAY EXERCISE 1',
     aspect: '16/9',
     colSpan: 2,
   },
   {
-    src: '/20240202_184747000_iOS.mp4',
+    src: '/rostrum_2.mp4',
     alt: 'Animation piece',
     label: '2D ANIMATION  CLAY EXERCISE 2',
     aspect: '16/9',

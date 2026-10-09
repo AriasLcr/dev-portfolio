@@ -25,6 +25,15 @@ export function About() {
     <div className="about">
       <div className="about__inner">
 
+        <section className="about__photo">
+          <img
+            src="/Gabriel.png"
+            alt="Gabriel Arias"
+            className="about__portrait"
+          />
+          <p className="about__edge-code">Gabriel Arias  2026</p>
+        </section>
+
         <section className="bio">
           <Prose>
             {bio.map((p, i) => renderParagraph(p, i))}

@@ -29,18 +29,33 @@ export function Landing() {
           <Link to="/work" className="section-links__item">
             <div className="section-links__placeholder" aria-hidden="true">
               <WorkIcon className="section-links__icon" />
+              <img
+                src="/collaboratory_1.png"
+                alt=""
+                className="section-links__thumb"
+              />
             </div>
             <span className="section-links__label">work</span>
           </Link>
           <Link to="/animation" className="section-links__item">
             <div className="section-links__placeholder" aria-hidden="true">
               <AnimationIcon className="section-links__icon" />
+              <img
+                src="/keyframes-projects.gif"
+                alt=""
+                className="section-links__thumb"
+              />
             </div>
             <span className="section-links__label">animation</span>
           </Link>
           <Link to="/about" className="section-links__item">
             <div className="section-links__placeholder" aria-hidden="true">
               <AboutIcon className="section-links__icon" />
+              <img
+                src="/Gabriel.png"
+                alt=""
+                className="section-links__thumb"
+              />
             </div>
             <span className="section-links__label">about</span>
           </Link>
